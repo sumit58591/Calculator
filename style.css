@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --border-radius: 5px;
+    --border-width: 1px;
+    --light-grey: #e2e0e0;
+    --orange: #ffc877;
+    --red: #c14444;
+}
+
+html, body {
+    width: 100%;
+}
+
+#calculator{
+    width: 45%;
+    height: 80%;
+    min-width: 300px;
+    min-height: 400px;
+    background-color: grey;
+    margin: auto;
+    margin-top: 80px;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: var(--border-radius);
+}
+
+#calculator h1 {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+
+#buttons-container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 60%;
+    width: 100%;
+    min-height: 300px;
+    border: 2px solid var(--light-grey);
+}
+
+#display-container {
+    font-size: 1.7rem;
+    width: 100%;
+    height: 20%;
+    background-color: silver;
+    min-height: 50px;
+    border: 2px solid var(--light-grey);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.692);
+}
+
+#display-container p {
+    margin: 0.5rem;
+    vertical-align: text-bottom;
+}
+
+#button-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: var(--light-grey);
+    height: 60%;
+    width: 100%;
+    min-height: 300px;
+    border: var(--border-width) solid var(--light-grey);
+    border-radius: var(--border-radius);
+}
+
+.button {
+    width: 25%;
+    height: 20%;
+    min-height: 60px;
+    border: 2px solid var(--light-grey);
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--orange);
+}
+
+#button-zero {
+    width: 50%;
+}
+
+.red {
+    background-color: var(--red);
+}
